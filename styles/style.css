@@ -1,0 +1,238 @@
+/*COMMON RULES*/
+
+@import url(https://necolas.github.io/normalize.css/3.0.2/normalize.css);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Oswald, sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header,
+.intro,
+.fancy-icons,
+.portfolio-main,
+footer {
+    width: 100%;
+}
+
+header,
+.fancy-icons {
+    margin-bottom: 3px;
+    box-shadow: 0px 3px 2px #b5b5b5;
+}
+
+.header__inner,
+.intro__inner,
+.icons__inner,
+.portfolio__inner,
+.footer__inner {
+    width: 65%;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
+.header__inner {
+    padding: 1.4em;
+}
+
+.logo__link h2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    float: right;
+    margin-top: 8px;
+    color: #333;
+}
+
+header a {
+    color: #333;
+}
+
+header a.active {
+    color: #00aeef;
+    text-decoration: none;
+}
+
+header a.active:hover {
+    text-decoration: none;
+    color: #00aeef;
+}
+
+header a:hover {
+    color: #00aeef;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icons__inner ul li {
+    display: inline-block;
+}
+
+
+/*INTRO*/
+
+.intro {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+.intro__inner {
+    text-align: center;
+}
+
+.intro__inner h1 {
+    display: inline-block;
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 4px 3px #333;
+    margin: 1em auto 9em auto;
+}
+
+
+/*ICONS*/
+
+.icons__inner {
+    padding: 2em 0;
+}
+
+.fancy-icons {
+    background-color: #00aeef;
+}
+
+.icons_item {
+    width: 50%;
+    margin-bottom: 0.7em;
+    padding: 0.7em;
+    line-height: 34px;
+    vertical-align: baseline;
+    float: left;
+    color: #fff;
+    font-size: 35px;
+}
+
+.icons_item:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.font-icon {
+    float: left;
+    font-size: 2em;
+    margin-left: 0.7em;
+}
+
+/*FOOTER*/
+
+footer {
+    border-bottom: 5px solid #00aeef;
+}
+
+.footer__inner {
+    padding: 1em 0 5em 0;
+}
+
+.footer_block1,
+.footer_block2,
+.footer_block3,
+.footer_block4 {
+    width: 25%;
+    float: left;
+    padding: 0 0 0 3em;
+}
+
+footer h3 {
+    font-weight: normal;
+    color: rgba(0, 174, 239, 1);
+}
+
+footer a {
+    font-size: 1em;
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00aeef;
+}
+
+
+/*PORTFOLIO PAGE*/
+
+.portfolio-main {
+    background-color: #00aeef;
+    padding: 3em 0;
+}
+
+.portfolio-main h2 {
+    margin: 0 0 2em 0;
+    font-size: 2em;
+    color: #333;
+    text-shadow: 0px 2px 3px #fff;
+}
+
+.portfolio_item {
+    display: inline-block;
+    width: 45%;
+    min-height: 300px;
+    margin: 0 0 2em 5%;
+    float: left;
+    background-image: url(http://lorempixel.com/300/300/cats);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: top center;
+    cursor: pointer;
+}
+
+.portfolio-text {
+    color: #fff;
+    font-weight: 100;
+}
